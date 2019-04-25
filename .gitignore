@@ -1,3 +1,4 @@
+#Library and Build files from ARVRsuits
 ARVRsuits/Library/
 !ARVRsuits/Library/LastSceneManagerSetup.txt
 
@@ -6,6 +7,16 @@ ARVRsuits/Obj/
 ARVRsuits/Build/
 ARVRsuits/Builds/
 ARVRsuits/Assets/AssetStoreTools*
+
+#Library and Build files from ModelExplorer
+ModelExplorer/Library/
+!ModelExplorer/Library/LastSceneManagerSetup.txt
+
+ModelExplorer/Temp/
+ModelExplorer/Obj/
+ModelExplorer/Build/
+ModelExplorer/Builds/
+ModelExplorer/Assets/AssetStoreTools*
 
 # Visual Studio cache directory
 .vs/
