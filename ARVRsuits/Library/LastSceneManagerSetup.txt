@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/QR_Scene.unity
+=======
+- path: Assets/Scenes/SampleScene.unity
+>>>>>>> ChrisBranch
   isLoaded: 1
   isActive: 1
