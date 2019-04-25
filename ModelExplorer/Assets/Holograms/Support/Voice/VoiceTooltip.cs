@@ -1,0 +1,32 @@
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License. See LICENSE in the project root for license information.
+
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Academy
+{
+    public class VoiceTooltip : MonoBehaviour
+    {
+        [Tooltip("The message stating which voice command is available on this tooltip.")]
+        public Text UserMessage;
+
+        private Color startingColor;
+        private Color commandHeardColor = new Color(0.33f, 0.14f, 0.93f, 1.0f);
+
+        void Start()
+        {
+            startingColor = UserMessage.color;
+        }
+
+        public void VoiceCommandHeard()
+        {
+            UserMessage.color = commandHeardColor;
+        }
+
+        public void ResetTooltip()
+        {
+            UserMessage.color = startingColor;
+        }
+    }
+}
