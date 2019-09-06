@@ -22,6 +22,10 @@ namespace Academy
         public GameObject screen10;
         public GameObject screen11;
         public GameObject screen12;
+        
+        //Show Hide Screen Reference
+        public GameObject ShowText;
+        public Vector4 CurrentColor;
 
         public GameObject[] IVATasks;
         public GameObject[] TranslationTasks;
@@ -44,6 +48,13 @@ namespace Academy
                     animator.enabled = false;
                 }
             }
+
+            //Code from Neil and Leah to change text color on keyword recognition (in progress)
+            // if (Input.GetKeyDown (Keycode.A))
+            // {
+            //     CurrentColor = ShowText.GetComponent<TextMesh>().Color;
+            //     Debug.Log
+            // }
         }
         public void NextTaskCommand()
         {
