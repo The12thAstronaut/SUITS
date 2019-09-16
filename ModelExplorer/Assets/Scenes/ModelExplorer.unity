@@ -3569,7 +3569,7 @@ PrefabInstance:
     - target: {fileID: 102000010767390410, guid: bfdc7f60d7205c84f82a4806a5352d60,
         type: 3}
       propertyPath: m_Text
-      value: 'Task 2
+      value: 'Task B
 
         Cubesat
 
@@ -22023,7 +22023,7 @@ PrefabInstance:
     - target: {fileID: 102000010767390410, guid: bfdc7f60d7205c84f82a4806a5352d60,
         type: 3}
       propertyPath: m_Text
-      value: 'Task 4
+      value: 'Task D
 
         Cubesat
 
@@ -27544,7 +27544,7 @@ PrefabInstance:
     - target: {fileID: 102000010767390410, guid: bfdc7f60d7205c84f82a4806a5352d60,
         type: 3}
       propertyPath: m_Text
-      value: 'Task 3
+      value: 'Task C
 
         Cubesat
 
@@ -31949,7 +31949,7 @@ PrefabInstance:
     - target: {fileID: 102000010767390410, guid: bfdc7f60d7205c84f82a4806a5352d60,
         type: 3}
       propertyPath: m_Text
-      value: 'Task 1
+      value: 'Task A
 
         Cubesat
 

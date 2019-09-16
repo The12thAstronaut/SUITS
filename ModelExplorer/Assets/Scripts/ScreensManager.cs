@@ -219,7 +219,34 @@ namespace Academy
 
         public void GoHomeCommand()
         {
+            //Set Hey Scout Window to Active
             screen1.gameObject.SetActive(true);
+
+            //Hide any other active windows
+            for(int i = 0; i<=IVATasks.Length; i++){
+                if(IVATasks[i].activeSelf.Equals(true)){
+                    IVATasks[i].gameObject.SetActive(false);
+                    break;
+                }
+            }
+            for(int i = 0; i<=TranslationTasks.Length; i++){
+                if(TranslationTasks[i].activeSelf.Equals(true)){
+                    TranslationTasks[i].gameObject.SetActive(false);
+                    break;
+                }
+            }
+            for(int i = 0; i<=EVATasks.Length; i++){
+                if(EVATasks[i].activeSelf.Equals(true)){
+                    EVATasks[i].gameObject.SetActive(false);
+                    break;
+                }
+            }
+            for(int i = 0; i<=TASK4Tasks.Length; i++){
+                if(TASK4Tasks[i].activeSelf.Equals(true)){
+                    TASK4Tasks[i].gameObject.SetActive(false);
+                    break;
+                }
+            } 
         }
 
            
