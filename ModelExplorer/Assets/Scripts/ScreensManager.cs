@@ -215,6 +215,13 @@ namespace Academy
             screen1.gameObject.SetActive(false);
             screen2.gameObject.SetActive(true);
             }
+        }
+
+        public void GoHomeCommand()
+        {
+            screen1.gameObject.SetActive(true);
+        }
+
            
            
             // Swap out the current model for the expanded model.
@@ -240,6 +247,6 @@ namespace Academy
             isModelExpanding = true;
 
             ExpandModel.Instance.Expand();*/
-        }
+        
     }
 }

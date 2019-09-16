@@ -20127,19 +20127,19 @@ MonoBehaviour:
   - {fileID: 95113854}
   - {fileID: 693879055}
   - {fileID: 828558479}
-  - {fileID: 617432977}
+  - {fileID: 0}
   - {fileID: 0}
   EVATasks:
   - {fileID: 128990555}
   - {fileID: 134421987}
-  - {fileID: 617432977}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   TASK4Tasks:
   - {fileID: 1454642763}
   - {fileID: 1616086204}
   - {fileID: 1032665364}
-  - {fileID: 617432977}
+  - {fileID: 0}
   - {fileID: 0}
 --- !u!114 &813710776
 MonoBehaviour:
@@ -23727,7 +23727,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Task 1
+  - Keyword: Task A
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -23744,7 +23744,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Task 2
+  - Keyword: Task B
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -23761,7 +23761,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Task 3
+  - Keyword: Task C
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -23812,12 +23812,29 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Task 4
+  - Keyword: Task D
     Response:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 813710775}
           m_MethodName: TASK4Command
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Go Home
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 813710775}
+          m_MethodName: GoHomeCommand
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -23860,17 +23877,19 @@ MonoBehaviour:
     KeyCode: 0
   - Keyword: Previous Task
     KeyCode: 0
-  - Keyword: Task 1
+  - Keyword: Task A
     KeyCode: 0
-  - Keyword: Task 2
+  - Keyword: Task B
     KeyCode: 0
-  - Keyword: Task 3
+  - Keyword: Task C
     KeyCode: 0
   - Keyword: Show Status
     KeyCode: 0
   - Keyword: Hide Status
     KeyCode: 0
-  - Keyword: Task 4
+  - Keyword: Task D
+    KeyCode: 0
+  - Keyword: Go Home
     KeyCode: 0
   recognitionConfidenceLevel: 1
 --- !u!23 &1090043096
