@@ -3512,7 +3512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010330146594, guid: bfdc7f60d7205c84f82a4806a5352d60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.42
+      value: -0.53
       objectReference: {fileID: 0}
     - target: {fileID: 4000010330146594, guid: bfdc7f60d7205c84f82a4806a5352d60, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3569,7 +3569,7 @@ PrefabInstance:
     - target: {fileID: 102000010767390410, guid: bfdc7f60d7205c84f82a4806a5352d60,
         type: 3}
       propertyPath: m_Text
-      value: 'Task B
+      value: '"Task Bravo"
 
         Cubesat
 
@@ -21966,7 +21966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010330146594, guid: bfdc7f60d7205c84f82a4806a5352d60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.51
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 4000010330146594, guid: bfdc7f60d7205c84f82a4806a5352d60, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22023,7 +22023,7 @@ PrefabInstance:
     - target: {fileID: 102000010767390410, guid: bfdc7f60d7205c84f82a4806a5352d60,
         type: 3}
       propertyPath: m_Text
-      value: 'Task D
+      value: '"Task Delta"
 
         Cubesat
 
@@ -27487,7 +27487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010330146594, guid: bfdc7f60d7205c84f82a4806a5352d60, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5160001
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 4000010330146594, guid: bfdc7f60d7205c84f82a4806a5352d60, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27544,7 +27544,7 @@ PrefabInstance:
     - target: {fileID: 102000010767390410, guid: bfdc7f60d7205c84f82a4806a5352d60,
         type: 3}
       propertyPath: m_Text
-      value: 'Task C
+      value: '"Task Charlie"
 
         Cubesat
 
@@ -31949,7 +31949,7 @@ PrefabInstance:
     - target: {fileID: 102000010767390410, guid: bfdc7f60d7205c84f82a4806a5352d60,
         type: 3}
       propertyPath: m_Text
-      value: 'Task A
+      value: '"Task Alpha"
 
         Cubesat
 
