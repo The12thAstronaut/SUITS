@@ -23727,7 +23727,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Task A
+  - Keyword: Task Alpha
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -23744,7 +23744,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Task B
+  - Keyword: Task Bravo
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -23761,7 +23761,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Task C
+  - Keyword: Task Charlie
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -23812,7 +23812,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Task D
+  - Keyword: Task Delta
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -23877,17 +23877,17 @@ MonoBehaviour:
     KeyCode: 0
   - Keyword: Previous Task
     KeyCode: 0
-  - Keyword: Task A
+  - Keyword: Task Alpha
     KeyCode: 0
-  - Keyword: Task B
+  - Keyword: Task Bravo
     KeyCode: 0
-  - Keyword: Task C
+  - Keyword: Task Charlie
     KeyCode: 0
   - Keyword: Show Status
     KeyCode: 0
   - Keyword: Hide Status
     KeyCode: 0
-  - Keyword: Task D
+  - Keyword: Task Delta
     KeyCode: 0
   - Keyword: Go Home
     KeyCode: 0
@@ -33093,7 +33093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010330146594, guid: bfdc7f60d7205c84f82a4806a5352d60, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.31
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 4000010330146594, guid: bfdc7f60d7205c84f82a4806a5352d60, type: 3}
       propertyPath: m_LocalPosition.z
@@ -35002,7 +35002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010330146594, guid: bfdc7f60d7205c84f82a4806a5352d60, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.27
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4000010330146594, guid: bfdc7f60d7205c84f82a4806a5352d60, type: 3}
       propertyPath: m_LocalPosition.z
@@ -35055,11 +35055,16 @@ PrefabInstance:
     - target: {fileID: 102000010767390410, guid: bfdc7f60d7205c84f82a4806a5352d60,
         type: 3}
       propertyPath: m_Text
-      value: 'Commands: "Next Task" or "Previous Task"'
+      value: "Command Options: \n\n\t\"Next Task\"\n\t\"Previous Task\"\n\t\"Go Home\""
       objectReference: {fileID: 0}
     - target: {fileID: 102000010767390410, guid: bfdc7f60d7205c84f82a4806a5352d60,
         type: 3}
       propertyPath: m_OffsetZ
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102000010767390410, guid: bfdc7f60d7205c84f82a4806a5352d60,
+        type: 3}
+      propertyPath: m_Alignment
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
