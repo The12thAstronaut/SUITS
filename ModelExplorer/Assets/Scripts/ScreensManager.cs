@@ -30,6 +30,8 @@ namespace Academy
         public GameObject[] IVATasks;
         public GameObject[] TranslationTasks;
         public GameObject[] EVATasks;
+        public GameObject[] TASK4Tasks;
+
 
         
         //public GameObject[] 
@@ -76,10 +78,24 @@ namespace Academy
                     break;
                 }
             }
+            for(int i = 0; i<=TranslationTasks.Length; i++){
+                if(TranslationTasks[i].activeSelf.Equals(true)){
+                    TranslationTasks[i].gameObject.SetActive(false);
+                    TranslationTasks[i+1].gameObject.SetActive(true);
+                    break;
+                }
+            }
             for(int i = 0; i<=EVATasks.Length; i++){
                 if(EVATasks[i].activeSelf.Equals(true)){
                     EVATasks[i].gameObject.SetActive(false);
                     EVATasks[i+1].gameObject.SetActive(true);
+                    break;
+                }
+            }
+            for(int i = 0; i<=TASK4Tasks.Length; i++){
+                if(TASK4Tasks[i].activeSelf.Equals(true)){
+                    TASK4Tasks[i].gameObject.SetActive(false);
+                    TASK4Tasks[i+1].gameObject.SetActive(true);
                     break;
                 }
             }
@@ -95,6 +111,13 @@ namespace Academy
                     break;
                 }
             }
+            for(int i = 0; i<=TranslationTasks.Length; i++){
+                if(TranslationTasks[i].activeSelf.Equals(true)){
+                    TranslationTasks[i].gameObject.SetActive(false);
+                    TranslationTasks[i-1].gameObject.SetActive(true);
+                    break;
+                }
+            }
             for(int i = 0; i<=EVATasks.Length; i++){
                 if(EVATasks[i].activeSelf.Equals(true)){
                     EVATasks[i].gameObject.SetActive(false);
@@ -102,7 +125,13 @@ namespace Academy
                     break;
                 }
             }
-
+            for(int i = 0; i<=TASK4Tasks.Length; i++){
+                if(TASK4Tasks[i].activeSelf.Equals(true)){
+                    TASK4Tasks[i].gameObject.SetActive(false);
+                    TASK4Tasks[i-1].gameObject.SetActive(true);
+                    break;
+                }
+            }            
         }
 
         public void ShowStatusCommand()
@@ -126,23 +155,31 @@ namespace Academy
 
         public void IVACommand()
         {
-            if(screen5.gameObject.activeSelf.Equals(true)){
-           screen5.gameObject.SetActive(false);
-           screen6.gameObject.SetActive(true);
+            if(screen3.gameObject.activeSelf.Equals(true)){
+           screen3.gameObject.SetActive(false);
+           screen4.gameObject.SetActive(true);
             }
         }
         public void TranslationCommand()
         {
-            if(screen5.gameObject.activeSelf.Equals(true)){
-           screen5.gameObject.SetActive(false);
-           screen7.gameObject.SetActive(true);
+            if(screen3.gameObject.activeSelf.Equals(true)){
+           screen3.gameObject.SetActive(false);
+           screen5.gameObject.SetActive(true);
             }
         }
         public void EVACommand()
         {
-            if(screen5.gameObject.activeSelf.Equals(true)){
-           screen5.gameObject.SetActive(false);
-           screen8.gameObject.SetActive(true);
+            if(screen3.gameObject.activeSelf.Equals(true)){
+           screen3.gameObject.SetActive(false);
+           screen6.gameObject.SetActive(true);
+            }
+        }
+
+        public void TASK4Command()
+        {
+            if(screen3.gameObject.activeSelf.Equals(true)){
+           screen3.gameObject.SetActive(false);
+           screen7.gameObject.SetActive(true);
             }
         }
 
