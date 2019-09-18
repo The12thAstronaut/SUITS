@@ -30,6 +30,7 @@ namespace Academy
         public GameObject[] IVATasks;
         public GameObject[] TranslationTasks;
         public GameObject[] EVATasks;
+        public GameObject[] TASK3Tasks;
         public GameObject[] TASK4Tasks;
 
 
@@ -92,6 +93,13 @@ namespace Academy
                     break;
                 }
             }
+            for(int i = 0; i<=TASK3Tasks.Length; i++){
+                if(TASK3Tasks[i].activeSelf.Equals(true)){
+                    TASK3Tasks[i].gameObject.SetActive(false);
+                    TASK3Tasks[i+1].gameObject.SetActive(true);
+                    break;
+                }
+            }            
             for(int i = 0; i<=TASK4Tasks.Length; i++){
                 if(TASK4Tasks[i].activeSelf.Equals(true)){
                     TASK4Tasks[i].gameObject.SetActive(false);
@@ -125,6 +133,13 @@ namespace Academy
                     break;
                 }
             }
+            for(int i = 0; i<=TASK3Tasks.Length; i++){
+                if(TASK3Tasks[i].activeSelf.Equals(true)){
+                    TASK3Tasks[i].gameObject.SetActive(false);
+                    TASK3Tasks[i-1].gameObject.SetActive(true);
+                    break;
+                }
+            }   
             for(int i = 0; i<=TASK4Tasks.Length; i++){
                 if(TASK4Tasks[i].activeSelf.Equals(true)){
                     TASK4Tasks[i].gameObject.SetActive(false);
@@ -149,7 +164,7 @@ namespace Academy
         {
             if(screen2.gameObject.activeSelf.Equals(true)){
            screen2.gameObject.SetActive(false);
-           screen3.gameObject.SetActive(true);
+        //    screen3.gameObject.SetActive(true);
             }
         }
 
@@ -172,6 +187,14 @@ namespace Academy
             if(screen3.gameObject.activeSelf.Equals(true)){
            screen3.gameObject.SetActive(false);
            screen6.gameObject.SetActive(true);
+            }
+        }
+
+        public void TASK3Command()
+        {
+            if(screen3.gameObject.activeSelf.Equals(true)){
+           screen3.gameObject.SetActive(false);
+           screen5.gameObject.SetActive(true);
             }
         }
 
@@ -222,7 +245,7 @@ namespace Academy
             //Set Hey Scout Window to Active
             screen1.gameObject.SetActive(true);
 
-            //Hide any other active windows
+            //Hide any other active checklist windows
             for(int i = 0; i<=IVATasks.Length; i++){
                 if(IVATasks[i].activeSelf.Equals(true)){
                     IVATasks[i].gameObject.SetActive(false);
