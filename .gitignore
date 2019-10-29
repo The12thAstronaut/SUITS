@@ -1,3 +1,13 @@
+#Library and Build files from MoonVR
+MoonVR/Library/
+!MoonVR/Library/LastSceneManagerSetup.txt
+
+MoonVR/Temp/
+MoonVR/Obj/
+MoonVR/Build/
+MoonVR/Builds/
+MoonVR/Assets/AssetStoreTools*
+
 #Library and Build files from ARVRsuits
 ARVRsuits/Library/
 !ARVRsuits/Library/LastSceneManagerSetup.txt
