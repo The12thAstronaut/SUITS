@@ -21,6 +21,7 @@ public class cameraMovement : MonoBehaviour {
     float camSens = 0.25f; //How sensitive it with mouse
     private Vector3 lastMouse = new Vector3(255, 255, 255); //kind of in the middle of the screen, rather than at the top (play)
     private float totalRun= 1.0f;
+    public static Telemetry tel_data = new Telemetry();
      
     void Update () {
         lastMouse = Input.mousePosition - lastMouse ;
@@ -55,6 +56,12 @@ public class cameraMovement : MonoBehaviour {
         }
         else{
             transform.Translate(p);
+        }
+
+        //Checking if there is a message to display
+        string msg = tel_data.readMessage();
+        if(msg!=null){
+            Debug.Log(msg);
         }
        
     }
