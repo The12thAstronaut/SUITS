@@ -13,25 +13,25 @@ public class MovingWaypoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         jsonString = File.ReadAllText(Application.dataPath + "/JSONFiles/HjsonData.json"); //Adds all text from json file to a string
         itemData = JsonMapper.ToObject(jsonString);
 
         TempPos = transform.position;
 
-        float json_x = (float)itemData["x"];
-        float json_y = (float)itemData["y"];
-        float json_z = (float)itemData["z"];
+        int json_x = (int) itemData["x"];
+        int json_y = (int) itemData["y"];
+        int json_z = (int) itemData["z"];
 
         TempPos.x = json_x;
         TempPos.y = json_y;
         TempPos.z = json_z;
 
         transform.position = TempPos;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
