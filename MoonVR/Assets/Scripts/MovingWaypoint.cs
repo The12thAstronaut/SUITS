@@ -19,9 +19,9 @@ public class MovingWaypoint : MonoBehaviour
         TempPos = transform.position; // set vector variable as the x,y,z position of the object
 
         // set variables for the x,y,z data coming from the JSON file
-        int json_x = (int) itemData["x"];
-        int json_y = (int) itemData["y"];
-        int json_z = (int) itemData["z"];
+        int json_x = (int) itemData["coords"]["x"];
+        int json_y = (int) itemData["coords"]["y"];
+        int json_z = (int) itemData["coords"]["z"];
 
         // change the current x,y,z values to the new x,y,z values
         TempPos.x = json_x;
@@ -30,6 +30,8 @@ public class MovingWaypoint : MonoBehaviour
 
         // finally change the current position to the new position
         transform.position = TempPos;
+
+        Debug.Log(itemData["strings"]["Bolt"]); // prints the name of the bolt 'JA2309' when the waypoint moves there
     }
 
     // Update is called once per frame
