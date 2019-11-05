@@ -18,6 +18,16 @@ ModelExplorer/Build/
 ModelExplorer/Builds/
 ModelExplorer/Assets/AssetStoreTools*
 
+#Library and Build files from ModelExplorerZip
+ModelExplorerZip/ModelExplorer/Library/
+!ModelExplorerZip/ModelExplorer/Library/LastSceneManagerSetup.txt
+
+ModelExplorerZip/ModelExplorer/Temp/
+ModelExplorerZip/ModelExplorer/Obj/
+ModelExplorerZip/ModelExplorer/Build/
+ModelExplorerZip/ModelExplorer/Builds/
+ModelExplorerZip/ModelExplorer/Assets/AssetStoreTools*
+
 # Visual Studio cache directory
 .vs/
 
