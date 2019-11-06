@@ -13,13 +13,7 @@ public float mainSpeed = 100.0f; //regular speed
     private float totalRun= 1.0f;
      
     void Update () {
-        lastMouse = Input.mousePosition - lastMouse ;
-        lastMouse = new Vector3(-lastMouse.y * camSens, lastMouse.x * camSens, 0 );
-        lastMouse = new Vector3(transform.eulerAngles.x + lastMouse.x , transform.eulerAngles.y + lastMouse.y, 0);
-        transform.eulerAngles = lastMouse;
-        lastMouse =  Input.mousePosition;
-        //Mouse  camera angle done.  
-       
+
         //Keyboard commands
         float f = 0.0f;
         Vector3 p = GetBaseInput();
@@ -38,23 +32,23 @@ public float mainSpeed = 100.0f; //regular speed
         p = p * Time.deltaTime;
        Vector3 newPosition = transform.position;
         if (Input.GetKey(KeyCode.Space)){ //If player wants to move on X and Z axis only
-            transform.Translate(p);
+            transform.Translate(p, Space.World);
             newPosition.x = transform.position.x;
             newPosition.z = transform.position.z;
             transform.position = newPosition;
         }
         else{
-            transform.Translate(p);
+            transform.Translate(p, Space.World);
         }
        
     }
      
     private Vector3 GetBaseInput() { //returns the basic values, if it's 0 than it's not active.
         Vector3 p_Velocity = new Vector3();
-        if (Input.GetKey (KeyCode.UpArrow)){
+        if (Input.GetKey (KeyCode.DownArrow)){
             p_Velocity += new Vector3(0, 0 , 1);
         }
-        if (Input.GetKey (KeyCode.DownArrow)){
+        if (Input.GetKey (KeyCode.UpArrow)){
             p_Velocity += new Vector3(0, 0, -1);
         }
         if (Input.GetKey (KeyCode.LeftArrow)){
