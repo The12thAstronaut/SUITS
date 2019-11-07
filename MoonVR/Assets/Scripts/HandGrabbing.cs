@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR; //needs to be UnityEngine.VR in Versions before 2017.2
+// using UnityEngine.XR; //needs to be UnityEngine.VR in Versions before 2017.2
 
 public class HandGrabbing : MonoBehaviour
 {
 
-    public string InputName;
-    public HandGrabbing OtherHandReference;
-    public XRNode NodeType;
+    // public string InputName;
+    // public HandGrabbing OtherHandReference;
+    // public XRNode NodeType;
     public Vector3 ObjectGrabOffset;
     public float GrabDistance = 0.1f;
     public string GrabTag = "Grab";
@@ -31,7 +31,7 @@ public class HandGrabbing : MonoBehaviour
     {
         _lastFramePosition = transform.position;
 
-        XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale);
+        // XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale);
 
         _currentGrabObject = null;
 
@@ -45,8 +45,8 @@ public class HandGrabbing : MonoBehaviour
     void Update()
     {
         //update hand position and rotation
-        transform.localPosition = InputTracking.GetLocalPosition(NodeType);
-        transform.localRotation = InputTracking.GetLocalRotation(NodeType);
+        // transform.localPosition = InputTracking.GetLocalPosition(NodeType);
+        // transform.localRotation = InputTracking.GetLocalRotation(NodeType);
 
 
         //if we don't have an active object in hand, look if there is one in proximity
@@ -57,7 +57,7 @@ public class HandGrabbing : MonoBehaviour
             if (colliders.Length > 0)
             {
                 //if there are colliders, take the first one if we press the grab button and it has the tag for grabbing
-                if (Input.GetAxis(InputName) >= 0.01f && colliders[0].transform.CompareTag(GrabTag))
+                if (Input.GetKeyDown("space") && colliders[0].transform.CompareTag(GrabTag))
                 {
                     //if we are already grabbing, return
                     if(_isGrabbing)
@@ -82,11 +82,11 @@ public class HandGrabbing : MonoBehaviour
                     //save a reference to grab object
                     _currentGrabObject = colliders[0].transform;
 
-                    //does other hand currently grab object? then release it!
-                    if (OtherHandReference.CurrentGrabObject != null)
-                    {
-                        OtherHandReference.CurrentGrabObject = null;
-                    }
+                    // //does other hand currently grab object? then release it!
+                    // if (OtherHandReference.CurrentGrabObject != null)
+                    // {
+                    //     OtherHandReference.CurrentGrabObject = null;
+                    // }
 
 
 
@@ -98,7 +98,7 @@ public class HandGrabbing : MonoBehaviour
         {
 
             //if we we release grab button, release current object
-            if (Input.GetAxis(InputName) < 0.01f)
+            if (Input.GetKeyDown("space"))
             {
 
 
@@ -118,12 +118,16 @@ public class HandGrabbing : MonoBehaviour
 
                 //release reference to object
                 _currentGrabObject = null;
+
+                //Let Object Float
+                _objectRGB.isKinematic = true;
+
             }
 
         }
 
         //release grab ?
-        if (Input.GetAxis(InputName) < 0.01f && _isGrabbing)
+        if (Input.GetKeyDown("space") && _isGrabbing)
         {
             _isGrabbing = false;
         }
