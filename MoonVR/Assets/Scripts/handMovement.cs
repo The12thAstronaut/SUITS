@@ -57,6 +57,12 @@ public float mainSpeed = 100.0f; //regular speed
         if (Input.GetKey (KeyCode.LeftArrow)){
             p_Velocity += new Vector3(1, 0, 0);
         }
+        if (Input.GetKey (KeyCode.Comma)){
+            p_Velocity += new Vector3(0, -1, 0);
+        }
+        if (Input.GetKey (KeyCode.Period)){
+            p_Velocity += new Vector3(0, 1, 0);
+        }
         return p_Velocity;
     }
 }

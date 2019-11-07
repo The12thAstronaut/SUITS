@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 42351177}
   m_Layer: 0
   m_Name: Bolt
-  m_TagString: Untagged
+  m_TagString: Grab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4325,6 +4325,14 @@ PrefabInstance:
     - target: {fileID: 100014, guid: e4b424967bbf5a840b06a371be2ede95, type: 3}
       propertyPath: m_Name
       value: MMSEV_rigged_Apr19
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: e4b424967bbf5a840b06a371be2ede95, type: 3}
+      propertyPath: m_TagString
+      value: Grab
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: e4b424967bbf5a840b06a371be2ede95, type: 3}
+      propertyPath: m_TagString
+      value: Grab
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: e4b424967bbf5a840b06a371be2ede95, type: 3}
       propertyPath: m_LocalPosition.x
