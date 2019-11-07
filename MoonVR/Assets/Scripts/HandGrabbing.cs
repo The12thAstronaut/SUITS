@@ -119,7 +119,7 @@ public class HandGrabbing : MonoBehaviour
                 //release reference to object
                 _currentGrabObject = null;
 
-                //Let Object Float
+                //Let Object Float After Letting Go
                 _objectRGB.isKinematic = true;
 
             }
