@@ -1,10 +1,11 @@
 {
 	"coords":{
-		"x":2,
+		"x":3,
 		"y":1,
-		"z":3
+		"z":2
 	},
 	"strings":{
-		"Bolt":"JA2309"
+		"Bolt":"JA2309",
+		"Instruction1": "Click X to raise the Maintenance Panel"
 	}
 }

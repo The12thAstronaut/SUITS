@@ -32,6 +32,7 @@ public class MovingWaypoint : MonoBehaviour
         transform.position = TempPos;
 
         Debug.Log(itemData["strings"]["Bolt"]); // prints the name of the bolt 'JA2309' when the waypoint moves there
+        Debug.Log(itemData["strings"]["Instruction1"]); //Prints how to open the maintenance panel in the debug log
     }
 
     // Update is called once per frame
