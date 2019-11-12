@@ -15,7 +15,7 @@ public class DoorOpen : MonoBehaviour
 
         if (panelIsOpening==true)
         {
-            Panel.transform.Translate(Vector3.up * Time.deltaTime * 5);
+            Panel.transform.Translate(Vector3.up * Time.deltaTime * 1);
         }
         if (Panel.transform.position.y > 2f)
         {
