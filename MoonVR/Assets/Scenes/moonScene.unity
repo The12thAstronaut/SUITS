@@ -4573,7 +4573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0e7d0e746dba5724482f40a6654da6da, type: 3}
       propertyPath: m_TagString
-      value: PGT
+      value: Grab
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0e7d0e746dba5724482f40a6654da6da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4908,6 +4908,7 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh12424
+
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
