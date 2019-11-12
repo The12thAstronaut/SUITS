@@ -4785,7 +4785,7 @@ GameObject:
   - component: {fileID: 1162557283}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: OpenButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4877,6 +4877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 270381707}
   panelIsOpening: 0
+  MainCamera: {fileID: 534669904}
 --- !u!1 &1341231036
 GameObject:
   m_ObjectHideFlags: 0

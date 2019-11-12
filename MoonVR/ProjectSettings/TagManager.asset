@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-
   - Grab
+  - OpenButton
   layers:
   - Default
   - TransparentFX
