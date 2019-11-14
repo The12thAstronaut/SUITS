@@ -17,7 +17,7 @@ public class DoorClose : MonoBehaviour
         {
             Panel.transform.Translate(Vector3.down * Time.deltaTime * 1);
         }
-        if (Panel.transform.position.y < 1.2f)
+        if (Panel.transform.position.y < 1.1f)
         {
             panelIsClosing = false;
         }
