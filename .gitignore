@@ -1,4 +1,4 @@
-#Library and Build files from ARVRsuits
+#Library and Build files from ARVRsuits (VR Code)
 ARVRsuits/Library/
 !ARVRsuits/Library/LastSceneManagerSetup.txt
 
@@ -8,7 +8,17 @@ ARVRsuits/Build/
 ARVRsuits/Builds/
 ARVRsuits/Assets/AssetStoreTools*
 
-#Library and Build files from ModelExplorer
+#Library and Build files from Leap Motion and ZED Mini Examples Folder (UI Team Code)
+Leap_Motion_and_ZED_Example/Library/
+!Leap_Motion_and_ZED_Example/Library/LastSceneManagerSetup.txt
+
+Leap_Motion_and_ZED_Example/Temp/
+Leap_Motion_and_ZED_Example/Obj/
+Leap_Motion_and_ZED_Example/Build/
+Leap_Motion_and_ZED_Example/Builds/
+Leap_Motion_and_ZED_Example/Assets/AssetStoreTools*
+
+#Library and Build files from ModelExplorer (AR Code)
 ModelExplorer/Library/
 !ModelExplorer/Library/LastSceneManagerSetup.txt
 
@@ -17,6 +27,16 @@ ModelExplorer/Obj/
 ModelExplorer/Build/
 ModelExplorer/Builds/
 ModelExplorer/Assets/AssetStoreTools*
+
+#Library and Build files from ModelExplorer (AR Code)
+ResearchTeam/ModelExplorer/Library/
+!ResearchTeam/ModelExplorer/Library/LastSceneManagerSetup.txt
+
+ResearchTeam/ModelExplorer/Temp/
+ResearchTeam/ModelExplorer/Obj/
+ResearchTeam/ModelExplorer/Build/
+ResearchTeam/ModelExplorer/Builds/
+ResearchTeam/ModelExplorer/Assets/AssetStoreTools*
 
 # Visual Studio cache directory
 .vs/
