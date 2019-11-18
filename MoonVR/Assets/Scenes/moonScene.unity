@@ -144,7 +144,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 1385492239}
 --- !u!114 &42351178
@@ -5000,7 +5000,7 @@ GameObject:
   - component: {fileID: 1350238777}
   m_Layer: 0
   m_Name: PGT Parent
-  m_TagString: PGT
+  m_TagString: Grab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5039,7 +5039,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh12380
+  m_Name: pb_Mesh12372
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2

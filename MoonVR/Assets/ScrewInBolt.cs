@@ -18,7 +18,14 @@ public class ScrewInBolt : MonoBehaviour
     {
         if(col.gameObject.tag == "PGT")
         {
-            transform.Translate(0, 0, speed);
+            float m_distanceTraveled = 0f;
+                if (m_distanceTraveled < 100f)
+                {
+                    Vector3 oldPosition = transform.position;
+                    transform.Translate(0, 0, 1 * Time.deltaTime);
+                    m_distanceTraveled += Vector3.Distance(oldPosition, transform.position);
+                }
+          
         }
     }
 }
