@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.10689663, g: 0.10481878, b: 0.10688596, a: 1}
+  m_IndirectSpecularColor: {r: 0.10694287, g: 0.10480965, b: 0.10694484, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4698,6 +4698,118 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c1c2856486facff42a424aa7cc31b766, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 248ca056b3a888b43b7e3cacfceda287, type: 3}
+--- !u!1 &1018377245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1018377247}
+  - component: {fileID: 1018377246}
+  m_Layer: 0
+  m_Name: ScienceSamplingSpline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1018377246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018377245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  editorData:
+    _bezierPath:
+      points:
+      - {x: -2, y: 0, z: 0}
+      - {x: -0.8210398, y: 0.04327643, z: -0.114253044}
+      - {x: 1.3995254, y: 0.0128801465, z: 0.06206751}
+      - {x: 2, y: 0, z: 0}
+      - {x: 4.793316, y: -0.059916466, z: -0.28872854}
+      - {x: 13.293562, y: -0.4063275, z: -1.359527}
+      - {x: 14.3143215, y: -0.6760192, z: -1.3399417}
+      - {x: 38.099087, y: -6.960118, z: -0.8835849}
+      - {x: 49.47632, y: 0.20510626, z: 1.0064445}
+      - {x: 62.673386, y: -3.6862803, z: 7.2619667}
+      - {x: 108.92547, y: -17.324516, z: 29.185848}
+      - {x: 91.91661, y: -27.509241, z: 71.650604}
+      - {x: 79.51757, y: -38.949364, z: 105.732475}
+      - {x: 68.4925, y: -49.121777, z: 136.03764}
+      - {x: 69.8188, y: -36.62196, z: 153.6104}
+      - {x: 71.14511, y: -24.122145, z: 171.18315}
+      - {x: 72.78258, y: -8.689816, z: 192.87856}
+      - {x: 92.946396, y: -11.983898, z: 197.89612}
+      - {x: 113.11021, y: -15.277979, z: 202.91367}
+      - {x: 153.79437, y: -21.924389, z: 213.03749}
+      - {x: 175.03163, y: -17.825916, z: 216.4859}
+      - {x: 196.26889, y: -13.727443, z: 219.9343}
+      - {x: 246.67993, y: -3.998866, z: 228.11978}
+      - {x: 273.32245, y: -12.137144, z: 226.02258}
+      - {x: 299.96497, y: -20.275421, z: 223.92537}
+      isClosed: 0
+      space: 0
+      controlMode: 0
+      autoControlLength: 0.3
+      boundsUpToDate: 0
+      bounds:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+      perAnchorNormalsAngle:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      globalNormalsAngle: 0
+      flipNormals: 0
+    vertexPathUpToDate: 0
+    vertexPathMaxAngleError: 0.3
+    vertexPathMinVertexSpacing: 0.01
+    showTransformTool: 1
+    showPathBounds: 0
+    showPerSegmentBounds: 0
+    displayAnchorPoints: 1
+    displayControlPoints: 1
+    bezierHandleScale: 1
+    globalDisplaySettingsFoldout: 0
+    keepConstantHandleSize: 0
+    showNormalsInVertexMode: 0
+    showBezierPathInVertexMode: 0
+    showDisplayOptions: 0
+    showPathOptions: 1
+    showVertexPathDisplayOptions: 0
+    showVertexPathOptions: 1
+    showNormals: 0
+    showNormalsHelpInfo: 0
+    tabIndex: 0
+  initialized: 1
+--- !u!4 &1018377247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018377245}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &1128345886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5051,7 +5163,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh5032
+  m_Name: pb_Mesh12430
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
