@@ -2,11 +2,34 @@
 ARVRsuits/Library/
 !ARVRsuits/Library/LastSceneManagerSetup.txt
 
+ResearchTeam/ModelExplorer/
+
 ARVRsuits/Temp/
 ARVRsuits/Obj/
 ARVRsuits/Build/
 ARVRsuits/Builds/
 ARVRsuits/Assets/AssetStoreTools*
+
+#Library and Build files from ARVRsuits
+SUITS_Research/Library/
+!SUITS_Research/Library/LastSceneManagerSetup.txt
+
+SUITS_Research/Temp/
+SUITS_Research/Obj/
+SUITS_Research/Build/
+SUITS_Research/Builds/
+SUITS_Research/Assets/AssetStoreTools*
+
+#Library and Build files from ARVRsuits
+Leap_Motion_and_Zed_Example/Library/
+!Leap_Motion_and_Zed_Example/Library/LastSceneManagerSetup.txt
+
+Leap_Motion_and_Zed_Example/Temp/
+Leap_Motion_and_Zed_Example/Obj/
+Leap_Motion_and_Zed_Example/Build/
+Leap_Motion_and_Zed_Example/Builds/
+Leap_Motion_and_Zed_Example/Assets/AssetStoreTools*
+
 
 #Library and Build files from ModelExplorer
 ModelExplorer/Library/
