@@ -48,7 +48,14 @@ public class ButtonClick : MonoBehaviour
         {
             Debug.Log("NEXT TASK COMMAND ACTIVATED");
             for(int i = 0; i<=TextSizeVariations.Length; i++){
-                if(TextSizeVariations[i].activeSelf.Equals(true)){
+                //If you reach the end of the array, don't increment anymore
+                if(i == 48) 
+                {
+                    Debug.Log("Reached End of Array");
+                    break;
+                }
+                else if(TextSizeVariations[i].activeSelf.Equals(true))
+                {
                     TextSizeVariations[i].gameObject.SetActive(false);
                     TextSizeVariations[i+1].gameObject.SetActive(true);
                     break;
@@ -68,6 +75,11 @@ public class ButtonClick : MonoBehaviour
         {
             Debug.Log("PREVIOUS TASK COMMAND ACTIVATED");
             for(int i = 0; i<=TextSizeVariations.Length; i++){
+                // if(i == 0) 
+                // {
+                //     Debug.Log("Reached Start of Array");
+                //     break;
+                // }
                 if(TextSizeVariations[i].activeSelf.Equals(true)){
                     TextSizeVariations[i].gameObject.SetActive(false);
                     TextSizeVariations[i-1].gameObject.SetActive(true);
