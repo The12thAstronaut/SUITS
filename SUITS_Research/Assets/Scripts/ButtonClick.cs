@@ -11,6 +11,7 @@ public class ButtonClick : MonoBehaviour
         public GameObject[] TextSizeVariations;
         public GameObject[] FontVariations;
         public GameObject[] DistanceVariations;
+        public GameObject HitObject;
 
     // Start is called before the first frame update
     void Start()

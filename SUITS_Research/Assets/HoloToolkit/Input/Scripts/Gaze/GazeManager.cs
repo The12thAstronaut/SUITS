@@ -241,6 +241,8 @@ namespace HoloToolkit.Unity.InputModule
             HitObject = isRegisteredForFocus
                 ? focusDetails.Object
                 : null; // If we're not actually registered for focus, we keep HitObject as null so we don't mislead anyone.
+                
+            Debug.Log(HitObject);
 
             if (focusDetails.Object != null)
             {
