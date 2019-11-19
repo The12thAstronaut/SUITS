@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class ButtonClick : MonoBehaviour
 {
+    // public GameObject Screens;
 
-    ScreensManager ScreensManager;
+    // private ScreensManager _ScreensManager;
+
+        public GameObject[] TextSizeVariations;
+        public GameObject[] FontVariations;
+        public GameObject[] DistanceVariations;
+
     // Start is called before the first frame update
     void Start()
     {
         //Make reference to Screen Manager Script Functions
-        ScreensManager = FindObjectOfType<ScreensManager>();
-        ScreensManager.NextTaskCommand();  
+    //     ScreensManager = FindObjectOfType<ScreensManager>();
+    //     ScreensManager.NextTaskCommand();  
 
     }
 
@@ -22,11 +28,59 @@ public class ButtonClick : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftBracket))
         {
             Debug.Log("Previous Task Button Pressed");
+
+            //Execute Previous Task Command
+            PreviousTaskCommand();
         }
 
         if (Input.GetKeyDown(KeyCode.RightBracket))
         {
             Debug.Log("Next Task Button Pressed");
+
+            //Execute Next Task Command
+            NextTaskCommand();
         } 
     }
+
+
+
+        public void NextTaskCommand()
+        {
+            Debug.Log("NEXT TASK COMMAND ACTIVATED");
+            for(int i = 0; i<=TextSizeVariations.Length; i++){
+                if(TextSizeVariations[i].activeSelf.Equals(true)){
+                    TextSizeVariations[i].gameObject.SetActive(false);
+                    TextSizeVariations[i+1].gameObject.SetActive(true);
+                    break;
+                }
+            }
+            for(int i = 0; i<=FontVariations.Length; i++){
+                if(FontVariations[i].activeSelf.Equals(true)){
+                    FontVariations[i].gameObject.SetActive(false);
+                    FontVariations[i+1].gameObject.SetActive(true);
+                    break;
+                }
+            }
+
+        }
+
+        public void PreviousTaskCommand()
+        {
+            Debug.Log("PREVIOUS TASK COMMAND ACTIVATED");
+            for(int i = 0; i<=TextSizeVariations.Length; i++){
+                if(TextSizeVariations[i].activeSelf.Equals(true)){
+                    TextSizeVariations[i].gameObject.SetActive(false);
+                    TextSizeVariations[i-1].gameObject.SetActive(true);
+                    break;
+                }
+            }
+            for(int i = 0; i<=FontVariations.Length; i++){
+                if(FontVariations[i].activeSelf.Equals(true)){
+                    FontVariations[i].gameObject.SetActive(false);
+                    FontVariations[i-1].gameObject.SetActive(true);
+                    break;
+                }
+            }
+
+        }
 }

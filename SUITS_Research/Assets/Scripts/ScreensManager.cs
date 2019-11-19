@@ -42,6 +42,18 @@ namespace Academy
 
         private void Update()
         {
+
+            if (Input.GetKeyDown(KeyCode.LeftBracket))
+            {
+                Debug.Log("Previous Task Button Pressed");
+            }
+
+            if (Input.GetKeyDown(KeyCode.RightBracket))
+            {
+                Debug.Log("Next Task Button Pressed");
+            } 
+
+
             if (isModelExpanding && Time.realtimeSinceStartup >= expandAnimationCompletionTime)
             {
                 isModelExpanding = false;
@@ -57,7 +69,7 @@ namespace Academy
         }
         public void NextTaskCommand()
         {
-
+            Debug.Log("NEXT TASK COMMAND ACTIVATED");
             for(int i = 0; i<=TextSizeVariations.Length; i++){
                 if(TextSizeVariations[i].activeSelf.Equals(true)){
                     TextSizeVariations[i].gameObject.SetActive(false);
@@ -77,6 +89,7 @@ namespace Academy
 
         public void PreviousTaskCommand()
         {
+            Debug.Log("PREVIOUS TASK COMMAND ACTIVATED");
             for(int i = 0; i<=TextSizeVariations.Length; i++){
                 if(TextSizeVariations[i].activeSelf.Equals(true)){
                     TextSizeVariations[i].gameObject.SetActive(false);
