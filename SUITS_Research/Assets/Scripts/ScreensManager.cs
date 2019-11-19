@@ -22,6 +22,14 @@ namespace Academy
         public GameObject screen10;
         public GameObject screen11;
         public GameObject screen12;
+        public GameObject screen13;
+        public GameObject screen14;
+        public GameObject screen15;
+
+
+        public GameObject[] TextSizeVariation;
+        public GameObject[] FontVariations;
+        public GameObject[] DistanceVariations;
 
         public GameObject[] IVATasks;
         public GameObject[] TranslationTasks;
@@ -44,20 +52,23 @@ namespace Academy
                     animator.enabled = false;
                 }
             }
+
+
+            //Keyboard Commands for Switching between tasks (In Progress by Neil)
+            if (Input.GetKeyDown(KeyCode.LeftBracket))
+            {
+                Debug.Log("Previous Task Button Pressed");
+            }
+
+            if (Input.GetKeyDown(KeyCode.RightBracket))
+            {
+                Debug.Log("Next Task Button Pressed");
+            }
+
         }
         public void NextTaskCommand()
         {
-           /* if(EVATasks[EVATasks.Length].activeSelf.Equals(true)){
-                EVATasks[EVATasks.Length].SetActive(false);
-                screen5.gameObject.SetActive(true);
-            return;
-            
-            }
-            if(IVATasks[IVATasks.Length].activeSelf.Equals(true)){
-                IVATasks[IVATasks.Length].SetActive(false);
-                screen5.gameObject.SetActive(true);
-            return;
-            }*/
+
             for(int i = 0; i<=IVATasks.Length; i++){
                 if(IVATasks[i].activeSelf.Equals(true)){
                     IVATasks[i].gameObject.SetActive(false);
