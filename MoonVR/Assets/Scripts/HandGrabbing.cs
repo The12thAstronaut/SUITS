@@ -76,7 +76,7 @@ public class HandGrabbing : MonoBehaviour
                     }
 
                     //set grab object to kinematic (disable physics)
-                    colliders[0].GetComponent<Rigidbody>().isKinematic = true;
+                    // colliders[0].GetComponent<Rigidbody>().isKinematic = true;
 
 
                     //save a reference to grab object
@@ -120,7 +120,7 @@ public class HandGrabbing : MonoBehaviour
                 _currentGrabObject = null;
 
                 //Let Object Float After Letting Go
-                _objectRGB.isKinematic = true;
+                // _objectRGB.isKinematic = true;
 
             }
 
