@@ -27,7 +27,7 @@ namespace Academy
         public GameObject screen15;
 
 
-        public GameObject[] TextSizeVariation;
+        public GameObject[] TextSizeVariations;
         public GameObject[] FontVariations;
         public GameObject[] DistanceVariations;
 
@@ -54,32 +54,21 @@ namespace Academy
             }
 
 
-            //Keyboard Commands for Switching between tasks (In Progress by Neil)
-            if (Input.GetKeyDown(KeyCode.LeftBracket))
-            {
-                Debug.Log("Previous Task Button Pressed");
-            }
-
-            if (Input.GetKeyDown(KeyCode.RightBracket))
-            {
-                Debug.Log("Next Task Button Pressed");
-            }
-
         }
         public void NextTaskCommand()
         {
 
-            for(int i = 0; i<=IVATasks.Length; i++){
-                if(IVATasks[i].activeSelf.Equals(true)){
-                    IVATasks[i].gameObject.SetActive(false);
-                    IVATasks[i+1].gameObject.SetActive(true);
+            for(int i = 0; i<=TextSizeVariations.Length; i++){
+                if(TextSizeVariations[i].activeSelf.Equals(true)){
+                    TextSizeVariations[i].gameObject.SetActive(false);
+                    TextSizeVariations[i+1].gameObject.SetActive(true);
                     break;
                 }
             }
-            for(int i = 0; i<=EVATasks.Length; i++){
-                if(EVATasks[i].activeSelf.Equals(true)){
-                    EVATasks[i].gameObject.SetActive(false);
-                    EVATasks[i+1].gameObject.SetActive(true);
+            for(int i = 0; i<=FontVariations.Length; i++){
+                if(FontVariations[i].activeSelf.Equals(true)){
+                    FontVariations[i].gameObject.SetActive(false);
+                    FontVariations[i+1].gameObject.SetActive(true);
                     break;
                 }
             }
@@ -88,17 +77,17 @@ namespace Academy
 
         public void PreviousTaskCommand()
         {
-            for(int i = 0; i<=IVATasks.Length; i++){
-                if(IVATasks[i].activeSelf.Equals(true)){
-                    IVATasks[i].gameObject.SetActive(false);
-                    IVATasks[i-1].gameObject.SetActive(true);
+            for(int i = 0; i<=TextSizeVariations.Length; i++){
+                if(TextSizeVariations[i].activeSelf.Equals(true)){
+                    TextSizeVariations[i].gameObject.SetActive(false);
+                    TextSizeVariations[i-1].gameObject.SetActive(true);
                     break;
                 }
             }
-            for(int i = 0; i<=EVATasks.Length; i++){
-                if(EVATasks[i].activeSelf.Equals(true)){
-                    EVATasks[i].gameObject.SetActive(false);
-                    EVATasks[i-1].gameObject.SetActive(true);
+            for(int i = 0; i<=FontVariations.Length; i++){
+                if(FontVariations[i].activeSelf.Equals(true)){
+                    FontVariations[i].gameObject.SetActive(false);
+                    FontVariations[i-1].gameObject.SetActive(true);
                     break;
                 }
             }
