@@ -8,6 +8,16 @@ ARVRsuits/Build/
 ARVRsuits/Builds/
 ARVRsuits/Assets/AssetStoreTools*
 
+#Library and Build files from MixedRealityBase_Israel (VR Code)
+MixedRealityBase_Israel/Library/
+!MixedRealityBase_Israel/Library/LastSceneManagerSetup.txt
+
+MixedRealityBase_Israel/Temp/
+MixedRealityBase_Israel/Obj/
+MixedRealityBase_Israel/Build/
+MixedRealityBase_Israel/Builds/
+MixedRealityBase_Israel/Assets/AssetStoreTools*
+
 #Library and Build files from Leap Motion and ZED Mini Examples Folder (UI Team Code)
 Leap_Motion_and_ZED_Example/Library/
 !Leap_Motion_and_ZED_Example/Library/LastSceneManagerSetup.txt
@@ -37,6 +47,16 @@ ResearchTeam/ModelExplorer/Obj/
 ResearchTeam/ModelExplorer/Build/
 ResearchTeam/ModelExplorer/Builds/
 ResearchTeam/ModelExplorer/Assets/AssetStoreTools*
+
+#Library and Build files from Suits_Research (AR Code)
+SUITS_Research/Library/
+!SUITS_Research/Library/LastSceneManagerSetup.txt
+
+SUITS_Research/Temp/
+SUITS_Research/Obj/
+SUITS_Research/Build/
+SUITS_Research/Builds/
+SUITS_Research/Assets/AssetStoreTools*
 
 # Visual Studio cache directory
 .vs/
@@ -70,3 +90,4 @@ sysinfo.txt
 ModelExplorer/Assets/4keva\.mp4\.meta
 
 ModelExplorer/Assets/4keva\.mp4
+*.info
