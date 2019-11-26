@@ -4128,12 +4128,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 488180056}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d55c823d12f070240966809f9c483c42, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d86a09068389cc44ae720035f2de3b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 270381707}
-  panelIsClosing: 0
-  MainCamera: {fileID: 534669904}
+  Door: {fileID: 0}
+  DoorOpen: 0
+  DoorClose: 0
+  MainCamera: {fileID: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -4273,11 +4274,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 574635cfbbd825546a7ee2524ee08ac8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.294
+      value: 1.133
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 574635cfbbd825546a7ee2524ee08ac8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.786
+      value: -0.025
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 574635cfbbd825546a7ee2524ee08ac8, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4725,14 +4726,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903365408}
-  m_LocalRotation: {x: -0, y: -0.99808383, z: -0, w: 0.061875924}
-  m_LocalPosition: {x: -0.71599984, y: 0.032000005, z: 2.0213683}
+  m_LocalRotation: {x: 0.08705876, y: -0.814453, z: 0.07659656, w: 0.56852454}
+  m_LocalPosition: {x: -1.171, y: 0.312, z: -1.305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1411729532}
   m_Father: {fileID: 609247180}
   m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: -172.90501, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.93, y: -110.531006, z: -3.2180002}
 --- !u!1001 &934924464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4918,6 +4919,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1118207510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1118207511}
+  - component: {fileID: 1118207512}
+  m_Layer: 0
+  m_Name: Point Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1118207511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118207510}
+  m_LocalRotation: {x: -0, y: -0, z: 0.026142102, w: 0.9996582}
+  m_LocalPosition: {x: -0.43438888, y: 2.9042656, z: 0.59499997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 609247180}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1118207512
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118207510}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 12.171171
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1001 &1128345886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5068,7 +5138,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1ed5fa2b792b4594ebf8e59db18bb985, type: 2}
+  - {fileID: 2100000, guid: 59a93b5b2f6c5654d9b9532d76520852, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5105,11 +5175,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1162557278}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59837f6c25c7cdc45819aa78ddad9fa2, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d86a09068389cc44ae720035f2de3b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 270381707}
-  panelIsOpening: 0
+  Door: {fileID: 270381707}
+  DoorOpen: 0
+  DoorClose: 0
   MainCamera: {fileID: 534669904}
 --- !u!1 &1341231036
 GameObject:
