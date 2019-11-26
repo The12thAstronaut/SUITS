@@ -25,7 +25,7 @@ public class jackMovement : MonoBehaviour
         {
             Jack.transform.Translate(Vector3.down * Time.deltaTime * 1);
         }
-        if (Jack.transform.position.y < 0.575f)
+        if (Jack.transform.position.y < 0.625f)
         {
             JackDown = false;
         }
