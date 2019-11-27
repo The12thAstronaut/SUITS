@@ -8,6 +8,10 @@ MoonVR/Builds/
 MoonVR/Assets/AssetStoreTools*
 !MoonVR/Library/LastSceneManagerSetup.txt
 
+#Files from UI and Research Team
+SUITS_Research/
+ModelExplorer/
+
 #Library and Build files from ARVRsuits
 ARVRsuits/Library/
 !ARVRsuits/Library/LastSceneManagerSetup.txt
@@ -60,3 +64,7 @@ sysinfo.txt
 ModelExplorer/Assets/4keva\.mp4\.meta
 
 ModelExplorer/Assets/4keva\.mp4
+*.blend1
+MoonVR/Assets/Models/Rover/MMSEV_Separate_Airlock_11-26-19.blend1.meta
+MoonVR/ProjectSettings/Packages/com.unity.probuilder/Settings.json
+MoonVR/ProjectSettings/Packages/com.unity.probuilder/Settings.json
