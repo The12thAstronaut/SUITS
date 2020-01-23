@@ -18,6 +18,16 @@ Leap_Motion_and_ZED_Example/Build/
 Leap_Motion_and_ZED_Example/Builds/
 Leap_Motion_and_ZED_Example/Assets/AssetStoreTools*
 
+#Main UI Team folder
+SUITSUI/Library/
+!SUITSUI/Library/LastSceneManagerSetup.txt
+
+SUITSUI/Temp/
+SUITSUI/Obj/
+SUITSUI/Build/
+SUITSUI/Builds/
+SUITSUI/Assets/AssetStoreTools*
+
 #Library and Build files from ModelExplorer (AR Code)
 ModelExplorer/Library/
 !ModelExplorer/Library/LastSceneManagerSetup.txt
