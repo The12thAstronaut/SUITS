@@ -18,6 +18,16 @@ MixedRealityBase_Israel/Build/
 MixedRealityBase_Israel/Builds/
 MixedRealityBase_Israel/Assets/AssetStoreTools*
 
+#Library and Build files from Winter_Break_HW (Unity Code)
+Winter_Break_HW/Library/
+!Winter_Break_HW/Library/LastSceneManagerSetup.txt
+
+Winter_Break_HW/Temp/
+Winter_Break_HW/Obj/
+Winter_Break_HW/Build/
+Winter_Break_HW/Builds/
+Winter_Break_HW/Assets/AssetStoreTools*
+
 #Library and Build files from Leap Motion and ZED Mini Examples Folder (UI Team Code)
 Leap_Motion_and_ZED_Example/Library/
 !Leap_Motion_and_ZED_Example/Library/LastSceneManagerSetup.txt
