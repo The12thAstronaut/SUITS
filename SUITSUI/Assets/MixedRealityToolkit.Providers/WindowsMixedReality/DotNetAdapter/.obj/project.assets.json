@@ -151,20 +151,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\memes\\.nuget\\packages\\": {}
+    "C:\\Users\\thomas\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\memes\\Documents\\School\\NASA SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj",
+      "projectUniqueName": "C:\\Users\\thomas\\Documents\\School\\NASA SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj",
       "projectName": "DotNetAdapter",
-      "projectPath": "C:\\Users\\memes\\Documents\\School\\NASA SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj",
-      "packagesPath": "C:\\Users\\memes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\memes\\Documents\\School\\NASA SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\.obj\\",
+      "projectPath": "C:\\Users\\thomas\\Documents\\School\\NASA SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj",
+      "packagesPath": "C:\\Users\\thomas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thomas\\Documents\\School\\NASA SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\.obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\memes\\Documents\\School\\NASA SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\NuGet.Config",
-        "C:\\Users\\memes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thomas\\Documents\\School\\NASA SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\NuGet.Config",
+        "C:\\Users\\thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -199,8 +203,7 @@
             "target": "Package",
             "version": "[0.5.*, )"
           }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
       }
     }
   }
