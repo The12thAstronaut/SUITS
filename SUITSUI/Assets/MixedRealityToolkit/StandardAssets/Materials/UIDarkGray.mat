@@ -10,8 +10,8 @@ Material:
   m_Name: UIDarkGray
   m_Shader: {fileID: 4800000, guid: 5bdea20278144b11916d77503ba1467a, type: 3}
   m_ShaderKeywords: _BORDER_LIGHT _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT
-    _DISABLE_ALBEDO_MAP _HOVER_LIGHT _SPECULARHIGHLIGHTS_ON _SPECULAR_HIGHLIGHTS _USEAMBIENT_ON
-    _USEDIFFUSE_ON _USEMAINCOLOR_ON
+    _DISABLE_ALBEDO_MAP _HOVER_LIGHT _ROUND_CORNERS _SPECULARHIGHLIGHTS_ON _SPECULAR_HIGHLIGHTS
+    _USEAMBIENT_ON _USEDIFFUSE_ON _USEMAINCOLOR_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -97,8 +97,8 @@ Material:
     - _BorderLightOpaqueAlpha: 1
     - _BorderLightReplacesAlbedo: 0
     - _BorderLightUsesHoverColor: 1
-    - _BorderMinValue: 0.1
-    - _BorderWidth: 0.5
+    - _BorderMinValue: 0.11
+    - _BorderWidth: 0.289
     - _BumpScale: 1
     - _CalibrationSpaceReflections: 0
     - _ClippingBorder: 0
@@ -114,7 +114,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DirectionalLight: 1
     - _DstBlend: 0
-    - _EdgeSmoothingValue: 0.002
+    - _EdgeSmoothingValue: 0
     - _EnableChannelMap: 0
     - _EnableEmission: 0
     - _EnableHoverColorOverride: 0
@@ -163,8 +163,8 @@ Material:
     - _RimLight: 0
     - _RimPower: 0.7
     - _RoundCornerMargin: 0
-    - _RoundCornerRadius: 0.25
-    - _RoundCorners: 0
+    - _RoundCornerRadius: 0.5
+    - _RoundCorners: 1
     - _Shade4: 0
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
