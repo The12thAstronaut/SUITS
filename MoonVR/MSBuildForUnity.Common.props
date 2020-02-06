@@ -1,0 +1,19 @@
+<Project>
+  <PropertyGroup>
+    <MSBuildForUnityVersion>0.8.3</MSBuildForUnityVersion>
+    
+    <MSBuildForUnityGeneratedOutputDirectory>C:\Users\George\Documents\GitHub\suits\MoonVR\MSBuild\Projects</MSBuildForUnityGeneratedOutputDirectory>
+    <UnityProjectAssetsPath>C:\Users\George\Documents\GitHub\suits\MoonVR\Assets</UnityProjectAssetsPath>
+    <MSBuildForUnityDefaultOutputPath>$(UnityProjectAssetsPath)\Dependencies</MSBuildForUnityDefaultOutputPath>
+    
+    <UnityCurrentPlatform>WindowsStandalone64</UnityCurrentPlatform>
+    <UnityCurrentTargetFramework>netstandard2.0</UnityCurrentTargetFramework>
+    
+    <UnityMajorVersion>2018</UnityMajorVersion>
+    <UnityMinorVersion>4</UnityMinorVersion>
+  </PropertyGroup>
+  
+  <Target Name="_RemoveOutputDirectory" AfterTargets="Clean">
+    <RemoveDir Directories="$(OutputPath)" />
+  </Target>
+</Project>

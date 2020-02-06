@@ -1,0 +1,13 @@
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef.meta
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs.meta
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\x64\MonoSupport.dll
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\x64\MonoSupport.dll.meta
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\netstandard2.0\DotNetAdapter.deps.json
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT.dll.meta
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\netstandard2.0\System.Drawing.Primitives.dll.meta
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT.dll
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\netstandard2.0\System.Drawing.Primitives.dll
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\.obj\Release\netstandard2.0\DotNetAdapter.csprojAssemblyReference.cache
+C:\Users\George\Documents\GitHub\suits\MoonVR\Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\.obj\Release\netstandard2.0\DotNetAdapter.csproj.CopyComplete
