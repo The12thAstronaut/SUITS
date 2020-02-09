@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\George\\Documents\\GitHub\\suits\\MoonVR\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj": {}
+    "C:\\Users\\memes\\Documents\\School\\SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\George\\Documents\\GitHub\\suits\\MoonVR\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj": {
+    "C:\\Users\\memes\\Documents\\School\\SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\George\\Documents\\GitHub\\suits\\MoonVR\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj",
+        "projectUniqueName": "C:\\Users\\memes\\Documents\\School\\SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj",
         "projectName": "DotNetAdapter",
-        "projectPath": "C:\\Users\\George\\Documents\\GitHub\\suits\\MoonVR\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj",
-        "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\George\\Documents\\GitHub\\suits\\MoonVR\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\.obj\\",
+        "projectPath": "C:\\Users\\memes\\Documents\\School\\SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj",
+        "packagesPath": "C:\\Users\\memes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\memes\\Documents\\School\\SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\.obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\George\\Documents\\GitHub\\suits\\MoonVR\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\NuGet.Config",
-          "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\memes\\Documents\\School\\SUITS\\Unity\\SUITS\\SUITSUI\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\NuGet.Config",
+          "C:\\Users\\memes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "net46"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,7 +27,7 @@
           "https://pkgs.dev.azure.com/UnityDeveloperTools/MSBuildForUnity/_packaging/UnityDeveloperTools/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "net46": {
             "projectReferences": {}
           }
         },
@@ -41,7 +38,7 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "net46": {
           "dependencies": {
             "MSBuildForUnity": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
@@ -52,19 +49,9 @@
             "Microsoft.Windows.MixedReality.DotNetWinRT": {
               "target": "Package",
               "version": "[0.5.*, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
             }
           },
-          "imports": [
-            "net461"
-          ],
-          "assetTargetFallback": true,
-          "warn": true
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
