@@ -8,6 +8,16 @@ ARVRsuits/Build/
 ARVRsuits/Builds/
 ARVRsuits/Assets/AssetStoreTools*
 
+#Library and Build files from Research_HUD
+Research_HUD/Library/
+!Research_HUD/Library/LastSceneManagerSetup.txt
+
+Research_HUD/Temp/
+Research_HUD/Obj/
+Research_HUD/Build/
+Research_HUD/Builds/
+Research_HUD/Assets/AssetStoreTools*
+
 #Library and Build files from MixedRealityBase_Israel (VR Code)
 MixedRealityBase_Israel/Library/
 !MixedRealityBase_Israel/Library/LastSceneManagerSetup.txt
