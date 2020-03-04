@@ -13,7 +13,6 @@ public class Catmull : MonoBehaviour
     void Start()
     {
         points = new Vector3[resolution * (controlPointsList.Length - 3)];
-        Debug.Log(resolution * (controlPointsList.Length -3));
         for (int i = 0; i < controlPointsList.Length - 3; i++)
         {
             for (int t = 0; t < resolution; t++)
@@ -23,11 +22,6 @@ public class Catmull : MonoBehaviour
                             controlPointsList[i + 1].position,
                             controlPointsList[i + 2].position,
                             controlPointsList[i + 3].position);
-                Debug.Log(GetCatmullRomPosition(t / (float)resolution,
-                            controlPointsList[i + 0].position,
-                            controlPointsList[i + 1].position,
-                            controlPointsList[i + 2].position,
-                            controlPointsList[i + 3].position));
             }
         }
         line.positionCount = resolution * (controlPointsList.Length - 3);
