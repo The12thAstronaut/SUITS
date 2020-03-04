@@ -9,7 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: HolographicButtonIconCamera
   m_Shader: {fileID: 4800000, guid: 5bdea20278144b11916d77503ba1467a, type: 3}
-  m_ShaderKeywords: _ALPHABLEND_ON _SPECULAR_HIGHLIGHTS _USECOLOR_ON _USEMAINTEX_ON
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _ALPHABLEND_ON _SPECULAR_HIGHLIGHTS _USECOLOR_ON
+    _USEMAINTEX_ON
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -158,6 +159,7 @@ Material:
     - _UseUIAlphaClip: 0
     - _VertexColors: 0
     - _VertexExtrusion: 0
+    - _VertexExtrusionSmoothNormals: 0
     - _VertexExtrusionValue: 0
     - _ZOffsetFactor: 0
     - _ZOffsetUnits: 0

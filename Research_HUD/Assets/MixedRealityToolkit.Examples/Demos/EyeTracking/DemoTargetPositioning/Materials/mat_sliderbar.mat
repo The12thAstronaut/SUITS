@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: mat_sliderbar
   m_Shader: {fileID: 4800000, guid: 5bdea20278144b11916d77503ba1467a, type: 3}
-  m_ShaderKeywords: _ALPHABLEND_ON _BORDER_LIGHT_USES_HOVER_COLOR _DISABLE_ALBEDO_MAP
-    _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _ALPHABLEND_ON _BORDER_LIGHT_USES_HOVER_COLOR
+    _DISABLE_ALBEDO_MAP _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0

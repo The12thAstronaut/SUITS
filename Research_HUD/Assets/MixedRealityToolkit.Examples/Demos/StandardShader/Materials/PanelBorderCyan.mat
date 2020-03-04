@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: PanelBorderCyan
   m_Shader: {fileID: 4800000, guid: 5bdea20278144b11916d77503ba1467a, type: 3}
-  m_ShaderKeywords: _ALPHABLEND_ON _BORDER_LIGHT _BORDER_LIGHT_USES_HOVER_COLOR _HOVER_COLOR_OVERRIDE
-    _HOVER_LIGHT _INNER_GLOW _ROUND_CORNERS
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _ALPHABLEND_ON _BORDER_LIGHT _BORDER_LIGHT_USES_HOVER_COLOR
+    _HOVER_COLOR_OVERRIDE _HOVER_LIGHT _INNER_GLOW _ROUND_CORNERS
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0

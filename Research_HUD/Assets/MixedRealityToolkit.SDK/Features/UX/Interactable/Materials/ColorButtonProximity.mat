@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: ColorButtonProximity
   m_Shader: {fileID: 4800000, guid: 5bdea20278144b11916d77503ba1467a, type: 3}
-  m_ShaderKeywords: _DIRECTIONAL_LIGHT _DISABLE_ALBEDO_MAP _HOVER_LIGHT _PROXIMITY_LIGHT
-    _SPECULAR_HIGHLIGHTS
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _DIRECTIONAL_LIGHT _DISABLE_ALBEDO_MAP _HOVER_LIGHT
+    _PROXIMITY_LIGHT _SPECULAR_HIGHLIGHTS
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
