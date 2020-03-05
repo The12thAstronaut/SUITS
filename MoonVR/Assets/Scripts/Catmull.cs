@@ -5,26 +5,47 @@ using UnityEngine;
 //Interpolation between points with a Catmull-Rom spline
 public class Catmull : MonoBehaviour
 {
-    public Transform[] controlPointsList;
+    public List<GameObject> controlPointsList;
     public LineRenderer line;
+    public float reachedThreshhold = 8;
     public int resolution = 30; 
 
     private Vector3[] points;
     void Start()
     {
-        points = new Vector3[resolution * (controlPointsList.Length - 3)];
-        for (int i = 0; i < controlPointsList.Length - 3; i++)
+        updateSpline();
+    }
+
+    void FixedUpdate()
+    {
+        if (controlPointsList.Count > 0)
+        {
+            if ((controlPointsList[0].transform.position - Camera.main.transform.position).magnitude < reachedThreshhold)
+            {
+                controlPointsList[0].SetActive(false);
+                controlPointsList.Remove(controlPointsList[0]);
+                updateSpline();
+            }
+        }
+    }
+
+    void updateSpline()
+    {
+        points = new Vector3[resolution * (controlPointsList.Count - 1)];
+        line.positionCount = resolution * (controlPointsList.Count - 1);
+        for (int i = 0; i < controlPointsList.Count - 1; i++)
         {
             for (int t = 0; t < resolution; t++)
             {
-                points[t+(i*resolution)] = GetCatmullRomPosition(t / (float)resolution,
-                            controlPointsList[i + 0].position,
-                            controlPointsList[i + 1].position,
-                            controlPointsList[i + 2].position,
-                            controlPointsList[i + 3].position);
+
+                points[(i * resolution) + t] = GetCatmullRomPosition(t / (float)resolution,
+                            controlPointsList[Mathf.Clamp(i - 1, 0, controlPointsList.Count - 1)].transform.position,
+                            controlPointsList[Mathf.Clamp(i + 0, 0, controlPointsList.Count - 1)].transform.position,
+                            controlPointsList[Mathf.Clamp(i + 1, 0, controlPointsList.Count - 1)].transform.position,
+                            controlPointsList[Mathf.Clamp(i + 2, 0, controlPointsList.Count - 1)].transform.position);
             }
         }
-        line.positionCount = resolution * (controlPointsList.Length - 3);
+
         line.SetPositions(points);
     }
 
