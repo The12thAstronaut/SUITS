@@ -2,21 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuScript : MonoBehaviour
+namespace Microsoft.MixedReality.Toolkit.UI
 {
-    public GameObject[] panels;
-    // Start is called before the first frame update
-    void Start()
+    public class MenuScript : MonoBehaviour
     {
-        for (int i = 0; i < panels.Length; i++)
+        public GameObject[] panels;
+        public GameObject[] buttons;
+        // Start is called before the first frame update
+        void Start()
         {
-            panels[i].SetActive(false);
+            DisablePanels();
+        }
+
+        public void DisablePanels()
+        {
+            for (int i = 0; i < panels.Length; i++)
+            {
+                panels[i].SetActive(false);
+            }
+        }
+
+        public void DisableButtons()
+        {
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                buttons[i].GetComponent<Interactable>().IsToggled = false;
+            }
+        }
+
+        public void DisableAll()
+        {
+            DisablePanels();
+            DisableButtons();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+

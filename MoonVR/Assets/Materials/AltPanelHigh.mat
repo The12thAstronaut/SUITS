@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AltPanel
+  m_Name: AltPanelHigh
   m_Shader: {fileID: 4800000, guid: 5bdea20278144b11916d77503ba1467a, type: 3}
   m_ShaderKeywords: _ALPHABLEND_ON _BORDER_LIGHT _BORDER_LIGHT_USES_HOVER_COLOR _DISABLE_ALBEDO_MAP
     _HOVER_LIGHT _ROUND_CORNERS _SPECULARHIGHLIGHTS_ON _SPECULAR_HIGHLIGHTS _USEAMBIENT_ON
@@ -205,7 +205,7 @@ Material:
     - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
     - _ClippingBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
     - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
-    - _Color: {r: 0.086863644, g: 0.16709623, b: 0.3018868, a: 0.50980395}
+    - _Color: {r: 0.1882353, g: 0.1882353, b: 0.1882353, a: 0.3137255}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
     - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
