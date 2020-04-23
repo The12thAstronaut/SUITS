@@ -6,8 +6,9 @@ public class ClientAPI : MonoBehaviour
 {
     public string url;
     public TelemetryStream telemetryStream;
+    
 
-    void Start()
+    void Update()
     {
         StartCoroutine(Get(url));
     }
@@ -31,25 +32,11 @@ public class ClientAPI : MonoBehaviour
                     result = "{\"result\":" + result + "}";
                     var data = JsonHelper.FromJson<Suit>(result);
 
-                    //telemetryStream.DisplayTelemData(data.heart_bpm, data.p_sub, data.p_suit);
-
-                    //foreach (var item in data)
-                    //{
-                        //Debug.Log(item.heart_bpm);
-                        //break;
-
-                    //}
-
-                    //Debug.Log("Heart rate is " + suit.bpm);
-                    //Debug.Log("Pressure sub is " + suit.psub);
-                    //Debug.Log("Suit Pressure is " + suit.psuit);
-                    //Debug.Log("Temperature Sub is " + suit.tsub);
-                    //Debug.Log("Velocity of fan is " + suit.vfan);
-                    //Debug.Log("Rate of oxygen is " + suit.rox);
-                    //Debug.Log("Battery Capacity is " + suit.batcap);
-                    //Debug.Log("Pressure of gaseous water is " + suit.gaseous);
-                    //Debug.Log("Pressure of liquid water is " + suit.liquid);
-                    //Debug.Log("Pressure of sop is " + suit.gaseous);
+                    foreach (var item in data)
+                    {
+                        telemetryStream.DisplayTelemData(item.heart_bpm, item.p_sub, item.p_suit, item.t_sub, item.v_fan, item.p_o2, item.rate_o2, item.p_h2o_g, item.p_h2o_l, item.p_sop, item.t_battery, item.t_oxygen, item.t_water, item.create_date);
+                        break;
+                    }
 
                 }
                 else
