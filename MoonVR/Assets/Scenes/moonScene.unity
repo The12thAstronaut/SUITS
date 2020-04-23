@@ -12733,10 +12733,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -16526,7 +16526,7 @@ GameObject:
   - component: {fileID: 825429412}
   - component: {fileID: 825429411}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: DemoPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16591,7 +16591,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825429409}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!1 &836133960
 GameObject:
   m_ObjectHideFlags: 0
@@ -25198,10 +25198,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -28313,6 +28313,17 @@ MonoBehaviour:
   bpmText: {fileID: 1332760086}
   psubText: {fileID: 554953400}
   psuitText: {fileID: 1994224279}
+  tsubText: {fileID: 0}
+  vfanText: {fileID: 0}
+  po2Text: {fileID: 0}
+  ro2Text: {fileID: 0}
+  ph2ogText: {fileID: 0}
+  ph2olText: {fileID: 0}
+  psopText: {fileID: 0}
+  batlifeText: {fileID: 0}
+  oxlifeText: {fileID: 0}
+  h2olifeText: {fileID: 0}
+  dateText: {fileID: 0}
 --- !u!4 &1445326691
 Transform:
   m_ObjectHideFlags: 0
@@ -29854,18 +29865,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Heart Rate (bpm)
 --- !u!222 &1545741113
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29903,7 +29914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f1e63956ec9a44bb721e883f497fd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: http://localhost:3000/api/suit
+  url: http://localhost:3000/api/suit/recent
   telemetryStream: {fileID: 1445326690}
 --- !u!4 &1570981098
 Transform:
@@ -30501,10 +30512,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -30512,7 +30523,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Pressure Sub
 --- !u!222 &1697250811
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -31488,18 +31499,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Pressure Suit
 --- !u!222 &1824983409
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -33903,10 +33914,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
