@@ -18,13 +18,19 @@ public class Catmull : MonoBehaviour
 
     void FixedUpdate()
     {
+        // As long as there is more than one waypoint
         if (controlPointsList.Count > 0)
         {
+            // Go through all waypoints and disable them
             for (int i = 0; i < controlPointsList.Count; i++)
             {
                 controlPointsList[i].SetActive(false);
             }
+
+            // Enable the first waypoint
             controlPointsList[0].SetActive(true);
+
+            // If you are close to the first waypoint remove it and update the spline
             if ((controlPointsList[0].transform.position - Camera.main.transform.position).magnitude < reachedThreshhold)
             {
                 controlPointsList[0].SetActive(false);
