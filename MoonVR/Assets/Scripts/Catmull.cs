@@ -20,6 +20,11 @@ public class Catmull : MonoBehaviour
     {
         if (controlPointsList.Count > 0)
         {
+            for (int i = 0; i < controlPointsList.Count; i++)
+            {
+                controlPointsList[i].SetActive(false);
+            }
+            controlPointsList[0].SetActive(true);
             if ((controlPointsList[0].transform.position - Camera.main.transform.position).magnitude < reachedThreshhold)
             {
                 controlPointsList[0].SetActive(false);
