@@ -9,6 +9,16 @@ ARVRsuits/Builds/
 ARVRsuits/Assets/AssetStoreTools*
 
 #Library and Build files from Research_HUD
+Research_HUD_V2/Library/
+!Research_HUD_V2/Library/LastSceneManagerSetup.txt
+
+Research_HUD_V2/Temp/
+Research_HUD_V2/Obj/
+Research_HUD_V2/Build/
+Research_HUD_V2/Builds/
+Research_HUD_V2/Assets/AssetStoreTools*
+
+#Library and Build files from Research_HUD
 Research_HUD/Library/
 !Research_HUD/Library/LastSceneManagerSetup.txt
 
