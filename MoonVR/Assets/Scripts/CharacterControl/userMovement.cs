@@ -5,7 +5,7 @@ using UnityEngine;
 public class userMovement : MonoBehaviour
 {
 
-    private CharacterController myCC;
+    public CharacterController myCC;
     public float movementSpeed;
     public float rotationSpeed;
 
@@ -94,7 +94,7 @@ public class userMovement : MonoBehaviour
     }
 
     void BasicRotation(){
-        float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * rotationSpeed;
+        float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * 4 * rotationSpeed;
         transform.Rotate (new Vector3(0, mouseX, 0));
         float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * 4 * rotationSpeed;
 

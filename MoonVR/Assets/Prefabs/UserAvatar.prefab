@@ -4897,7 +4897,8 @@ GameObject:
   - component: {fileID: 365564107787001423}
   - component: {fileID: 4132665972910496394}
   - component: {fileID: 1142122808247431182}
-  - component: {fileID: 1207613349444049132}
+  - component: {fileID: 6829146577085581299}
+  - component: {fileID: 6180567103095827686}
   - component: {fileID: 3516472558755286177}
   - component: {fileID: 2159930187747325113}
   m_Layer: 0
@@ -4973,7 +4974,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1207613349444049132
+--- !u!114 &6829146577085581299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7324907974155512007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34bd52c80fedeb842b9ddd6a462eba2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterValue: 0
+  usernameString: 
+  myCharacter: {fileID: 0}
+  myUsername: {fileID: 0}
+  usernameText: {fileID: 0}
+  userOxygen: 0
+  userEnergy: 0
+  myCamera: {fileID: 0}
+  myAL: {fileID: 0}
+  animator: {fileID: 0}
+--- !u!114 &6180567103095827686
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
