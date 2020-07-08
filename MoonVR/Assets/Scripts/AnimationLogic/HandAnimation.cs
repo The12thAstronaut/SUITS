@@ -19,24 +19,29 @@ public class HandAnimation : MonoBehaviour {
 	void Update ()
     {
 		//if we are pressing grab, set animator bool IsGrabbing to true
-        if (Input.GetKeyDown("space"))
+        if(Input.GetAxis(_handGrab.InputName) >= 0.01f)
         {
-            //Check if hand is closed
+            //if hand is closed and has already grabbed, send to closed state, grabbing to False
             if (_anim.GetBool("IsClosed"))
             {
-                //Reverse Grabbing Animation
                 _anim.SetBool("IsGrabbing", false);
-                _anim.SetBool("IsClosed", false);
-                //Open State
-            }
+                //STATE 01
 
-            else 
-            {
-                //Play Grabbing Animation
-                _anim.SetBool("IsGrabbing", true);
-                _anim.SetBool("IsClosed", true);
-                //Closed State
             }
+            else if (!_anim.GetBool("IsGrabbing"))
+            {
+                _anim.SetBool("IsGrabbing", true);
+                //Set IsClosed Flag to true (yes, closed)
+                _anim.SetBool("IsClosed", true);
+                //STATE 11
+
+            }
+        }
+        //if we let go of grab, set Closed to false
+        else
+        {
+            _anim.SetBool("IsClosed", false);
+            //STATE 00
         }
 
 	}
