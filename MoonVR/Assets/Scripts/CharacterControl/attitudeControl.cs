@@ -35,7 +35,7 @@ public bool activateRotation = true;
 		    }
 	        //Debug.Log(this.transform.rotation.eulerAngles.y);
 			if(this.transform.rotation.eulerAngles.y >= (startingRotation +90)){
-				yawVelocity = 0;
+				// yawVelocity = 0;
 				Debug.Log("90 degrees");
 		}
 		if(activateRotation == true)
@@ -47,7 +47,7 @@ public bool activateRotation = true;
 	
 		// yawVelocity
 		//Press 1 or 2 to increment or decrement yaw velocity
-		yawVelocity = yawVelocity + rotationSpeed*Input.GetAxis("yawVelocity")*Time.deltaTime;		
+		// yawVelocity = yawVelocity + rotationSpeed*Input.GetAxis("yawVelocity")*Time.deltaTime;		
 		transform.Rotate(0f, yawVelocity, 0f, Space.Self);
 		}
 		//Stop Rotational velocities if bool is False
