@@ -12,6 +12,7 @@ public float startingRotation = 0.0f;
 public GameObject AirlockButton;
 public GameObject LeftHand;
 public GameObject RightHand;
+public GameObject pgtLight;
 
 public bool activateRotation = false;
 public bool forwardModePGT = true;
@@ -89,12 +90,15 @@ public float rollModeMultiplier = -1.0f;
 			//Convert this yaw input into logic that controls turning of the wheels
 			yawVelocity = 0f;
 			} 
-		/* void onCollisionEnter(Collision collider){
-			if(collider.gameObject.name == "AirlockButton){
-				yawVelocity = 1;
-            //put in script on left & right hand objects
+		//If PGT drill bit rotating, turn on PGT Light
+			if(pitchVelocity != 0f)
+			{
+				pgtLight.SetActive(true);
 			}
-		} 
-		*/
+			else
+			{
+				pgtLight.SetActive(false);
+			}
+
 	}
 }

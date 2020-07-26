@@ -7,7 +7,12 @@ public class Toolbelt : MonoBehaviour
 
     //Make the PGT variable public so the PGT game object can be attached through the Unity Editor
     public GameObject PGT;
-    bool toggleBool = true;
+
+    public GameObject buttonGreen;
+    public GameObject buttonGreenText;
+
+    bool toggleBool = false;
+    bool toggleInteract = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +27,6 @@ public class Toolbelt : MonoBehaviour
         {
             //Toggle the PGT game object on and off if the keyboard E button is pressed
             toggleBool = !toggleBool;
-            PGT.SetActive(toggleBool);
 
             if(toggleBool)
             {            
@@ -33,5 +37,17 @@ public class Toolbelt : MonoBehaviour
             print("PGT toggled ON");
             }
         }    
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            //Toggle the buttonGreen game object on and off if the keyboard F button is pressed
+            toggleInteract = !toggleInteract;
+        }
+
+        //Set GameObject Acvtive value based on Toggle Variables
+        PGT.SetActive(toggleBool);
+        buttonGreen.SetActive(toggleInteract);
+        buttonGreenText.SetActive(toggleInteract);
+
     }
 }
