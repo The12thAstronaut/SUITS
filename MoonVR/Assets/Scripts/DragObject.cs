@@ -13,9 +13,9 @@ public class DragObject : MonoBehaviour
 
     private Vector3 mOffset;
 
-
-
     private float mZCoord;
+
+    public Camera AvatarCamera;
 
 
 
@@ -23,7 +23,7 @@ public class DragObject : MonoBehaviour
 
     {
 
-        mZCoord = Camera.main.WorldToScreenPoint(
+        mZCoord = AvatarCamera.WorldToScreenPoint(
 
             gameObject.transform.position).z;
 
@@ -32,7 +32,7 @@ public class DragObject : MonoBehaviour
         // Store offset = gameobject world pos - mouse world pos
 
         mOffset = gameObject.transform.position - GetMouseAsWorldPoint();
-
+        Debug.Log("Mouse Pressed.");
     }
 
 
@@ -55,7 +55,7 @@ public class DragObject : MonoBehaviour
 
         // Convert it to world points
 
-        return Camera.main.ScreenToWorldPoint(mousePoint);
+        return AvatarCamera.ScreenToWorldPoint(mousePoint);
 
     }
 

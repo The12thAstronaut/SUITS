@@ -9,9 +9,6 @@ public float rollVelocity = 0.0f;
 public float pitchVelocity = 0.0f;
 public float yawVelocity = 0.0f;
 public float startingRotation = 0.0f;
-public GameObject AirlockButton;
-public GameObject LeftHand;
-public GameObject RightHand;
 public GameObject pgtLight;
 
 public bool activateRotation = false;
@@ -57,16 +54,6 @@ public float rollModeMultiplier = -1.0f;
 				}
 			}
 
-		if(Input.GetMouseButtonDown(0)){
-			if(AirlockButton){
-			  yawVelocity = 1;
-			  }
-		    }
-	        //Debug.Log(this.transform.rotation.eulerAngles.y);
-			if(this.transform.rotation.eulerAngles.y >= (startingRotation +90)){
-				// yawVelocity = 0;
-				Debug.Log("90 degrees");
-			}
 		if(activateRotation == true)
 			{
 			//If activateRotation, start rotation of PGT drill bit
@@ -81,6 +68,9 @@ public float rollModeMultiplier = -1.0f;
 			//Press 1 or 2 to increment or decrement yaw velocity
 			// yawVelocity = yawVelocity + rotationSpeed*Input.GetAxis("yawVelocity")*Time.deltaTime;		
 			transform.Rotate(0f, yawVelocity, 0f, Space.Self);
+
+			//turn on PGT light
+			pgtLight.SetActive(false);
 			}
 
 		//Stop Rotational velocities if bool is False
@@ -89,16 +79,9 @@ public float rollModeMultiplier = -1.0f;
 			pitchVelocity = 0f;
 			//Convert this yaw input into logic that controls turning of the wheels
 			yawVelocity = 0f;
-			} 
-		//If PGT drill bit rotating, turn on PGT Light
-			if(pitchVelocity != 0f)
-			{
-				pgtLight.SetActive(true);
-			}
-			else
-			{
-				pgtLight.SetActive(false);
-			}
 
+			//turn off PGT Light
+			pgtLight.SetActive(false);
+			} 
 	}
 }

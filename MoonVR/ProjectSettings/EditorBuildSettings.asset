@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/trainingMoonScene.unity
+    guid: 457e21bb648488a42ab642438d456d76
   m_configObjects: {}
