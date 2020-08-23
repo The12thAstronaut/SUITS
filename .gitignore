@@ -23,6 +23,16 @@ ARVRsuits/Build/
 ARVRsuits/Builds/
 ARVRsuits/Assets/AssetStoreTools*
 
+#Library and Build files from Raycast_Demo
+Raycast_Demo/Library/
+!Raycast_Demo/Library/LastSceneManagerSetup.txt
+
+Raycast_Demo/Temp/
+Raycast_Demo/Obj/
+Raycast_Demo/Build/
+Raycast_Demo/Builds/
+Raycast_Demo/Assets/AssetStoreTools*
+
 #Library and Build files from Leap Motion and ZED Mini Examples Folder (UI Team Code)
 Leap_Motion_and_ZED_Example/Library/
 !Leap_Motion_and_ZED_Example/Library/LastSceneManagerSetup.txt
