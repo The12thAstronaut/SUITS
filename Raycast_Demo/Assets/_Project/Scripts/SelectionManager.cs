@@ -9,6 +9,8 @@ public class SelectionManager : MonoBehaviour
     [SerializeField] private Material defaultMaterial;
 
     private Transform _selection;
+    public Transform rayOrigin;
+
 
 
     private void Update()
@@ -20,12 +22,16 @@ public class SelectionManager : MonoBehaviour
             _selection = null;
         }
         
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        rayOrigin = Camera.main.transform;
+        // var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 2))
+        // if (Physics.Raycast(ray, out hit, 2))
+        if(Physics.Raycast(rayOrigin.position, rayOrigin.TransformDirection(Vector3.forward), out hit, 1000))
         {
-            Debug.DrawLine(ray.origin, hit.point);
+            // Debug.DrawLine(ray.origin, hit.point);
             var selection = hit.transform;
+            Debug.Log("Hit");
+            Debug.Log(rayOrigin.transform);
             if (selection.CompareTag(selectableTag))
             {
                 var selectionRenderer = selection.GetComponent<Renderer>();
