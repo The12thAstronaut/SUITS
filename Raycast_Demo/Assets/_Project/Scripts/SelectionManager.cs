@@ -31,7 +31,8 @@ public class SelectionManager : MonoBehaviour
             // Debug.DrawLine(ray.origin, hit.point);
             var selection = hit.transform;
             Debug.Log("Hit");
-            Debug.Log(rayOrigin.transform);
+            Debug.Log(rayOrigin);
+            Debug.Log(hit.collider.gameObject.name);
             if (selection.CompareTag(selectableTag))
             {
                 var selectionRenderer = selection.GetComponent<Renderer>();
