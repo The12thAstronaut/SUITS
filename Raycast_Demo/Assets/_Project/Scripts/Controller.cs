@@ -10,7 +10,7 @@ public class Controller : MonoBehaviour
     {
         if(other.tag == "Button")
         {
-            instructions_button1.SetActive(true);
+            // instructions_button1.SetActive(true);
             //instructions_button2.SetActive(true);
         }
     }
@@ -20,7 +20,7 @@ public class Controller : MonoBehaviour
     {
         if(other.tag == "Button")
         {
-            instructions_button1.SetActive(false);
+            // instructions_button1.SetActive(false);
             //instructions_button2.SetActive(false);
         }
     }
