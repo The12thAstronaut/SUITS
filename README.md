@@ -13,7 +13,7 @@ Using a helmet-based interactive display, guiding information can be projected o
 Find out more about the challenge at:
 https://microgravityuniversity.jsc.nasa.gov/nasasuits.cfm
 
-![Alt text](/Pictures/SUITS-2021.PNG?raw=true "SUITS 2021 Overview")
+![Alt text](/Pictures/SUITS-2021.png?raw=true "SUITS 2021 Overview")
 
 ![Alt text](/Pictures/NASA_SUITS_Logov4.png?raw=true "12th Astronaut Logo")
 
